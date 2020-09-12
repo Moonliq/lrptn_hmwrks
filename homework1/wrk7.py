@@ -6,7 +6,7 @@ def ask_user(say):
             break
         elif say in expls:
             print(expls[say])
-            break
+            say = input('Что-нибудь')
         else:
             print('Хм')
             say = input('Что-нибудь')

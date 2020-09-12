@@ -1,3 +1,3 @@
-n = input('Your strng: ')
-for a in range(len(n)):
-    print(n[a])
+word = input('Your strng: ')
+for a in word:
+    print(a)

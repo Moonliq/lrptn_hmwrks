@@ -1,6 +1,4 @@
-n = int(input('Your age please:'))
 def todo(age):
-    age = n
     if age < 3:
         return(f'You are {age} years old and you are Newborn')
     elif age >= 3 and age <= 6:
@@ -11,6 +9,6 @@ def todo(age):
         return(f'You are {age} years old and you are Student')
     else:
         return (f'You are {age} years old and you are Worker')
-     
-f = todo(n)
-print(f)
+
+
+print(todo(int(input('Your age please:'))))
