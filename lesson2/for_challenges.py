@@ -30,7 +30,7 @@ for n in names:
     if is_male[n]:
         print(f'{n} мужик')
     else:
-            print(f'{n} не мужик')
+          print(f'{n} не мужик')
 
 print('Задание 4')
 # Даны группу учеников. Нужно вывести количество групп и для каждой группы – количество учеников в ней
@@ -44,13 +44,13 @@ groups = [
   ['Оля', 'Петя', 'Гриша'],
 ]
 # ???
-grsum = 0
-stud = 0
-for n in groups:
-    grsum += 1
-    stud = len(n)
-    print(f'В группе №{grsum} {stud} студентов')
-print(f'Всего групп {grsum}')
+# grsum = 0
+# stud = 0
+for n in enumerate(groups, start=1):
+    # grsum += 1
+    # stud = len(n[1])
+    print(f'В группе №{n[0]} {len(n[1])} студентов')
+print(f'Всего групп {n[0]}')
        
 
 print('Задание 5')
@@ -64,7 +64,5 @@ groups = [
   ['Оля', 'Петя', 'Гриша'],
 ]
 # ???
-grsum = 0
-for n in groups:
-    grsum += 1
-    print(f'В группе №{grsum}: {", ".join(n)}')
+for n in enumerate(groups, start=1):
+  print(f'В группе №{n[0]}: {", ".join(n[1])}')
